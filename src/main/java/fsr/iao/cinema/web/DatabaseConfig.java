@@ -8,9 +8,8 @@ import org.springframework.context.annotation.Configuration;
 
 import com.zaxxer.hikari.HikariConfig;
 import com.zaxxer.hikari.HikariDataSource;
-//spring.datasource.url=jdbc:mysql://localhost:3306/db_cinema?serverTimezone=UTC
 
-@Configuration
+
 public class DatabaseConfig {
 
     @Value("${spring.datasource.url}")
