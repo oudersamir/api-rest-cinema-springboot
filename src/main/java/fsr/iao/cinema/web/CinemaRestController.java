@@ -138,19 +138,13 @@ public class CinemaRestController {
 	public String uploadFile(@RequestParam("file")MultipartFile file,@RequestParam("info")String info) throws Exception{
 		JsonNode jsonNode = stringToJSONObject(info);
 		System.out.println(jsonNode.get("titre").asText());
-		
-//		try {
-//			 JsonObjectSerializer<String> jsonObject = new JsonObjectSerializer <String>(info);
-//			 System.out.println(jsonObject.get("titre"));
-//		}catch (JSONException err){
-//		} 
-//		
+
 		System.out.println(info);
         String str=file.getOriginalFilename().trim();
 	
 		str=str.substring(str.indexOf("."), str.length());
 
-		System.out.println("hhhhhhhhhhhhhhhhhhhh" +System.getProperty("user.home")+"/cinema/images/"+file.getOriginalFilename());
+		System.out.println( System.getProperty("user.home")+"/cinema/images/"+file.getOriginalFilename());
 		String destinationFilename=System.getProperty("user.home")+"/cinema/images/"+jsonNode.get("titre").asText()+str;
 		
 		try{
@@ -163,11 +157,7 @@ public class CinemaRestController {
 		}
 	@PostMapping(path="/addFilm")
 	public Film addFilm(@RequestBody Film film){
-//		String str=film.getPhoto();
-//		str=str.substring(str.indexOf("."), str.length());
-//		System.out.println(film);
-//		film.setPhoto(film.getTitre()+str);
-		 //film.setPhoto(film.);
+
 		Film f= filmRepository.save(film);
 		
 		return f;
