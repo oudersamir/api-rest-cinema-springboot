@@ -2,6 +2,9 @@
 <h2>Steps to Setup</h2>
 <h3>1. Clone the application</h3>
 <p> https://github.com/oudersamir/api-rest-cinema-springboot.git </p>
+<h3>Front-end :</h3>
+
+https://github.com/oudersamir/appCinema-Angular-front-end
 
 <h3>2. Create Mysql database</h3>
 
