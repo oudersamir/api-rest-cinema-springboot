@@ -27,4 +27,4 @@
 <strong>Explore Rest APIs.</strong> <br>
 The app defines following CRUD APIs <br>
 
- ![alt text](https://raw.githubusercontent.com/oudersamir/api-rest-cinema-springboot/master/src/main/resources/static/swagger-description.PNG)
+ ![alt text](https://github.com/oudersamir/api-rest-cinema-springboot/blob/master/src/main/resources/static/cinema/images/swagger-description.PNG?raw=true)
